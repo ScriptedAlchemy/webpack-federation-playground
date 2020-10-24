@@ -10,10 +10,12 @@
     "serve": "concurrently \"cd app1; yarn serve\" \"cd app2; yarn serve\"",
     "clean": "concurrently \"cd app1; yarn clean\" \"cd app2; yarn clean\""
   },
+  "resolutions": {
+    "webpack": "git+https://github.com/ScriptedAlchemy/webpack.git"
+  },
   "devDependencies": {
     "lerna": "^3.22.1",
     "concurrently": "^5.3.0"
-
   },
   "name": "webpack-federation-playground"
 }
