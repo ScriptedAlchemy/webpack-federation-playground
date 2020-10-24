@@ -1,0 +1,19 @@
+{
+  "workspaces": [
+    "./app1",
+    "./app2"
+  ],
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"cd app1; yarn start\" \"cd app2; yarn start\"",
+    "build": "concurrently \"cd app1; yarn build\" \"cd app2; yarn build\"",
+    "serve": "concurrently \"cd app1; yarn serve\" \"cd app2; yarn serve\"",
+    "clean": "concurrently \"cd app1; yarn clean\" \"cd app2; yarn clean\""
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "concurrently": "^5.3.0"
+
+  },
+  "name": "webpack-federation-playground"
+}
