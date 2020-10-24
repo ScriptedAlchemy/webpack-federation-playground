@@ -11,7 +11,7 @@
     "clean": "concurrently \"cd app1; yarn clean\" \"cd app2; yarn clean\""
   },
   "resolutions": {
-    "webpack": "git+https://github.com/ScriptedAlchemy/webpack.git"
+    "webpack": "git+https://github.com/ScriptedAlchemy/webpack.git#mf/container-startup"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
