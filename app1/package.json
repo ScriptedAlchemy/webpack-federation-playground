@@ -8,13 +8,13 @@
     "babel-loader": "8.1.0",
     "html-webpack-plugin": "4.5.0",
     "serve": "11.3.2",
-    "webpack": "5.0.0",
+    "webpack": "git+https://github.com/ScriptedAlchemy/webpack.git#mf/container-startup",
     "webpack-cli": "4.0.0",
     "webpack-dev-server": "3.11.0"
   },
   "scripts": {
-    "start": "webpack-cli serve",
-    "build": "webpack --mode production",
+    "start": "node --inspect ../node_modules/webpack-cli/bin/cli.js serve",
+    "build": "node --inspect ../node_modules/webpack-cli/bin/cli.js --mode production",
     "serve": "serve dist -p 3001",
     "clean": "rm -rf dist"
   },
