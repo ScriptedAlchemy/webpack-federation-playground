@@ -9,6 +9,9 @@ module.exports = {
     contentBase: path.join(__dirname, "dist"),
     port: 3001,
   },
+  optimization: {
+    runtimeChunk:'single'
+  },
   output: {
     publicPath: "auto",
   },
