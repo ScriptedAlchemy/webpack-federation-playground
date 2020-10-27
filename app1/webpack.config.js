@@ -10,7 +10,7 @@ module.exports = {
     port: 3001,
   },
   optimization: {
-    runtimeChunk:'single'
+    // runtimeChunk:'single'
   },
   output: {
     publicPath: "auto",
